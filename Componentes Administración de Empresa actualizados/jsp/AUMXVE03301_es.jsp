@@ -179,7 +179,7 @@
 												<div class="col-2">
 													<label>Nivel</label>
 													<br/>
-													<input id="levels" class="form-control form-control-sm col-sm-10" type="text" maxlength="1" <%= (utils.getValorContexto("TIPEMP").equals("P"))?"class=\"disabled\"value=\"1\"":"class=\"requerido\"value=\"" + utils.getValorContexto("NIVELES").trim() + "\"" %> onkeypress="return esValidoNum(event)">
+													<input id="levels" name="levels" class="form-control form-control-sm col-sm-10" type="text" maxlength="1" <%= (utils.getValorContexto("TIPEMP").equals("P"))?"class=\"disabled\"value=\"1\"":"class=\"requerido\"value=\"" + utils.getValorContexto("NIVELES").trim() + "\"" %> onkeypress="return esValidoNum(event)">
 												</div>
 												<div class="col-2">
 													<label>CR</label><br/>
@@ -227,7 +227,7 @@
 												<label>Direcci&oacute;n</label>
 											</div>
 											<div class="col-12 row">
-												<div class="col-3">
+												<div class="col-4">
 													<label>Calle</label><br/>
 													<input id="street" class="form-control form-control-sm col-sm-10" type="text" size="35" maxlength="35" value='<%=utils.getValorContexto("CALLE").trim()%>' onkeypress="return esValidoText(event)">
 												</div>
@@ -239,7 +239,7 @@
 													<label>N&uacute;mero interior</label><br/>
 													<input id="interiorNumber" class="form-control form-control-sm col-sm-10" type="text" size="5" maxlength="5" value='<%=utils.getValorContexto("NUMINT").trim()%>' onkeypress="return esValidoText(event)">
 												</div>
-												<div class="col-3">
+												<div class="col-2">
 													<label>Colonia</label><br/>
 													<input id="neighborhood" class="form-control form-control-sm col-sm-10" type="text" size="30" maxlength="35" value='<%=utils.getValorContexto("COLONIA").trim()%>' onkeypress="return esValidoText(event)">
 												</div>
@@ -249,37 +249,37 @@
 												</div>
 											</div>
 											<div class="col-12 row">
-												<div class="col-3">
+												<div class="col-4">
 													<label>Delegaci&oacute;n o Municipio</label><br/>
 													<input id="municipality" class="form-control form-control-sm col-sm-10" type="text" size="30" maxlength="35" value='<%=utils.getValorContexto("DELMUN").trim()%>' onkeypress="return esValidoText(event)">
 												</div>
-												<div class="col-3">
+												<div class="col-2">
 													<label>Ciudad</label><br/>
 													<input id="city" class="form-control form-control-sm col-sm-10" type="text" size="30" maxlength="30" value='<%=utils.getValorContexto("CIUDAD").trim()%>' onkeypress="return esValidoText(event)">
 												</div>
-												<div class="col-3">
+												<div class="col-2">
 													<label>Entidad Federativa</label><br/>
 													<input id="state" class="form-control form-control-sm col-sm-10" type="text" size="25" maxlength="25" value='<%=utils.getValorContexto("ENTIDAD").trim()%>' onkeypress="return esValidoText(event)">
 												</div>
-												<div class="col-3">
+												<div class="col-2">
 													<label>Calle de referencia</label><br/>
 													<input id="referenceStreet" class="form-control form-control-sm col-sm-10" type="text" size="30" maxlength="40" value='<%=utils.getValorContexto("CALLEREF").trim()%>'onkeypress="return esValidoText(event)">
 												</div>
 											</div>
 											<div class="col-12 row">
-												<div class="col-3">
+												<div class="col-4">
 													<label>Tel&eacute;fono 1</label><br/>
 													<input id="telephone1" class="form-control form-control-sm col-sm-10" type="text" size="10" maxlength="10" value='<%=utils.getValorContexto("TELEF01").trim()%>' onkeypress="return esValidoNum(event)">
 												</div>
-												<div class="col-3">
+												<div class="col-2">
 													<label>Ext 1</label><br/>
 													<input id="extTelephone1" class="form-control form-control-sm col-sm-10" type="text" size="5" maxlength="5" value='<%=utils.getValorContexto("EXTTEL1").trim()%>' onkeypress="return esValidoNum(event)">
 												</div>
-												<div class="col-3">
+												<div class="col-2">
 													<label>Tel&eacute;fono 2</label><br/>
 													<input id="telephone2" class="form-control form-control-sm col-sm-10" type="text" size="10" maxlength="10" value='<%=utils.getValorContexto("TELEF02").trim()%>' onkeypress="return esValidoNum(event)">
 												</div>
-												<div class="col-3">
+												<div class="col-2">
 													<label>Ext 2</label><br/>
 													<input id="extTelephone2" class="form-control form-control-sm col-sm-10" type="text" size="5" maxlength="5" value='<%=utils.getValorContexto("EXTTEL2").trim()%>' onkeypress="return esValidoNum(event)">
 												</div>
@@ -416,6 +416,7 @@
 							</div>
 						</div>
 						<!-- Tercer acordeon-->
+
 						<div id="levelsSection" class="card">
 							<div class="card-header" role="tab" id="heading-2">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
@@ -438,6 +439,7 @@
 												</div>
 											</div>
 											<%
+											/*Modificaciones Niveles*/
 												int w=0;
 												int lim=0;
 											try{
@@ -457,7 +459,7 @@
 													<label><%=utils.getValorContexto("LST_NIVEL."+w+".NVNUME")%></label>
 												</div>
 												<div id="keyLevel<%=w%>" class="col-4 center" name="keysLevels" value="<%=utils.getValorContexto("LST_NIVEL."+w+".NVCLAVE")%>">
-													<label><%=utils.getValorContexto("LST_NIVEL."+w+".NVCLAVE")%></label>
+													<input id="key_<%=w%>" name="descLevel" class="requerido form-control form-control-sm col-sm-4" maxlength="30" type="text" size="35" value="<%=utils.getValorContexto("LST_NIVEL."+w+".NVCLAVE")%>">
 												</div>
 												<div class="col-4 center">
 													<input id="desc_<%=w%>" name="descLevel" class="requerido form-control form-control-sm col-sm-4" maxlength="30" type="text" size="35" value="<%=utils.getValorContexto("LST_NIVEL."+w+".NVDESCR").trim()%>">
@@ -466,7 +468,27 @@
 											<%
 													w++;
 												}/*fin while */
-																	
+												
+												int num_niveles=request.getParameter("levels");
+												if(w<num_niveles){
+													for(int y=w;y<=num_niveles;y++){
+													 %>
+													<div class="col-9 row">
+														<div class="col-4 center">
+															<label><%=y%></label>
+														</div>
+														<div id="keyLevel<%=w%>" class="col-4 center" name="keysLevels" value="<%=utils.getValorContexto("LST_NIVEL."+w+".NVCLAVE")%>">
+															<input id="key_<%=w%>" name="descLevel" class="requerido form-control form-control-sm col-sm-4" maxlength="30" type="text" size="35" value="">
+														</div>
+														<div class="col-4 center">
+															<input id="desc_<%=w%>" name="descLevel" class="requerido form-control form-control-sm col-sm-4" maxlength="30" type="text" size="35" value="">
+														</div>
+													</div>	
+													 <%
+													}
+												}
+												
+
 																	
 												for(int x = w; x < lim; x++){
 																		
@@ -497,6 +519,7 @@
 											catch(NumberFormatException ex){
 												System.out.println(ex);
 											}
+											/*Fin modificaciones*/
 											%>
 											<div class="col-12 right">
 												<input  id="btnLevel" class="btn btn-success" type="button" name="btnLevel" value="Modificar">
@@ -829,6 +852,68 @@
 		selec = cod+"-"+des;
 		seleccionarCodigoCombo('cmb_apli',selec,'AUMXVE03301');
 	}
+	/*Funciones Niveles*/
+	function validar(){
+		//validar campos
+		//todos los renglones ya definidos deben tener algun valor.
+		tot=total;//sacado de la cuenta de renglones al armar la tabla.
+		ok=true;
+		
+		
+		
+		for(i=llenos;i<tot;i++){
+			document.getElementById("desc_"+i).value=removeSpecialChars(document.getElementById("desc_"+i).value);
+			document.getElementById("key_"+i).value=removeSpecialChars(document.getElementById("key_"+i).value);
+
+		}
+		
+		
+		//armar
+		cad="";
+		c="";
+		d="";
+		if(ok){
+		
+			for(i=0;i<tot;i++){
+				c=document.getElementById("key_"+i).value;
+				d=document.getElementById("desc_"+i).value;
+				
+				if(c!="" && d!=""){
+					if(i>=llenos){
+					cad+="A"
+					}else{
+					cad+="M"
+					}
+					cad+="-"+(i+1)+"-"+c+"-"+d+"|";
+				}
+			}
+			
+			if(cad.length>0){
+			cad=cad.substring(0,cad.length-1); //para quitar el ultimo pipe
+			}
+			
+		}
+		
+		
+		if(ok ){
+			actualizar();
+		}else{ //mostrar mensajes de error
+			alert("ERROR");
+		}
+	}
+	function actualizar(){
+	
+		document.getElementById("h_niveles").value=cad;
+		
+		document.AUMXVE03301.evento.value="0X2501011";
+		document.AUMXVE03301.submit();
+	}
+	function removeSpecialChars(str) {
+  		return str.replace(/(?!\w|\s)./g, '')
+    	.replace(/\s+/g, ' ')
+    	.replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2');
+	}
+	/*Fin funciones niveles*/
 	</script>	
 </body>
 </html>
