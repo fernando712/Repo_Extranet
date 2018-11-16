@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no" />
+	<title>Consulta/Modificación de Empresa</title>
+	<link rel="stylesheet" type="text/css" href="css/bundle.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.modal.css">
+</head>
+<body>
+	<customform>
+		<div class="container">
+			<header>
+				<div class="row">
+					<p class="pb-1 mx-2 my-2 blue-text titulo"><span class="icon icon-11 pt-2"></span> -Modificación de Empresa</p>
+				</div>
+			</header>			
+		</div>
+		<div class="container">
+			<form>
+				<div class="table-responsive">
+					<table class="table">
+						<tbody>
+					    	<tr>
+					      		<td class="sin-borde subtitulo" scope="row" align="right">REFERENCIA: </td>
+					      		<td class="sin-borde subtitulo">EXT98724</td>
+					      		<td class="sin-borde subtitulo" align="right">NOMBRE DE LA EMPRESA: </td>
+					      		<td class="sin-borde subtitulo">EMPRESA DEL GOLFO UNO</td>
+					    	</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+
+				<div class="card">
+					<div id="accordion" class="card-block accordion" role="tablist" aria-multiselectable="true">
+						
+						<!-- inicia primer acordeon -->
+						<div class="card">
+							<div class="card-header" role="tab" id="heading-0">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse-0" aria-expanded="false" aria-controls="collapse-0">
+					            <span class="icon icon-58"></span>Modificar
+					        	</a>
+							</div>
+							<div id="collapse-0" class="collapse" role="tabpanel" aria-labelledby="heading-0">
+								<div class="card-block sin-space">
+									<div class="card">
+										<div class="card-header blue first">
+											<h4>Datos de la empresa</h4>
+										</div>
+										<div class="card-block about-me sin-space">								
+											<div class="table-responsive">
+												<table class="table">
+													<tbody>
+														<tr>
+															<td class="sbsp">
+																<label>Referencia</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="" >
+																</inputfieldtext>
+															</td>
+															<td class="sbsp">
+																<label>Estado</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp">
+																<label>Cliente Bancomer</label><br>
+																<label for="sizeSmall">Si</label>&nbsp;	
+																<input type="radio" name="rb_cli" id="si" value="true" checked>&nbsp;
+																<label for= "sizeMed">No</label>&nbsp;
+								        						<input type="radio" name="rb_cli" id="no" value="false">
+															</td>
+															<td class="sbsp">
+																<label>Número de Cliente</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" id="numeCliente" type="text" name="NUM_CLIENTE" onKeyDown="cambiaBanderaCliente();" size="25" maxlength="25">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp"><br>
+																<input class="btn btn-success" type="button" name="BTN_BUSQUEDA" id="BTN_BUSQUEDA" value="Búsqueda" onclick="js_cliente();">
+															</td>
+															<td class="sbsp" align="right">
+																<input class="btn btn-success" type="button" name="BTN_MODIFICAR" id="BTN_MODIFICAR" value="Modificar">
+															</td>
+														</tr>
+														<tr>
+															<td class="sbsp" colspan="2">
+																<label>Nombre de la empresa</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" id="nombreEmpresa" type="text" name="nombreEmpresa" size="45" maxlength="45">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp">
+																<label>Nombre corto</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-6" type="text" name="">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp" colspan="2"><br>
+																<label class="text-success">Capture el nombre corto si es empresa Aduex,<br>este dato no podrá ser modificado posteriormente</label>
+															</td>
+															<td class="sbsp" align="right">
+																<input class="btn btn-success" type="button" name="BTN_BAJA" id="BTN_BAJA" value="Baja">
+															</td>
+														</tr>
+														<tr>
+															<td class="sbsp">
+																<label>Nivel</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp">
+																<label>CR</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp">
+																<label>Delegación de Administración</label><br>
+																<input type="checkbox" name="">
+																Administrador
+															</td>
+															<td class="sbsp">
+																<label>Identificador de Administrador</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp" colspan="2" align="right">
+																<input class="btn btn-success" type="button" name="BTN_REACTIVAR" id="BTN_REACTIVAR" value="Reactivar">
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="card-header blue first">
+											<h4>Datos del contacto</h4>
+										</div>
+										<div class="card-block about-me sin-space">
+											<div class="table-responsive">
+												<table class="table">
+													<tbody>
+														<tr>
+															<td class="sbsp" colspan="2">
+																<label>Nombre del contacto</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp" colspan="2">
+																<label>E-mail</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+														</tr>
+														<tr>
+															<th class="sbsp">
+																<label>Dirección</label>
+															</th>
+														</tr>
+														<tr>
+															<td class="sbsp">
+																<label>Calle</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp">
+																<label>Número exterior</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp">
+																<label>Número interior</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp">
+																<label>Colonia</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp">
+																<label>Código postal</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+														</tr>
+														<tr>
+															<td class="sbsp">
+																<label>Delegación o Municipio</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp">
+																<label>Ciudad</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp">
+																<label>Entidad Federativa</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp">
+																<label>Calle de referencia</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+														</tr>
+														<tr>
+															<td class="sbsp">
+																<label>Teléfono 1</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp">
+																<label>Ext 1</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp">
+																<label>Teléfono 2</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+															<td class="sbsp">
+																<label>Ext 2</label><br>
+																<inputfieldtext>
+																	<input class="form-control form-control-sm col-sm-10" type="text" name="">
+																</inputfieldtext>
+															</td>
+														</tr>
+													</tbody>
+												</table>												
+											</div>
+										</div>										
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- termina primer acordeon -->
+						
+						<!-- inicia segundo acordeon -->
+						<div class="card">
+							<div class="card-header" role="tab" id="heading-1">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+					            <span class="icon icon-147"></span>Vincular - Desvincular Aplicaciones
+					        	</a>
+							</div>
+							<div id="collapse-1" class="collapse" role="tabpanel" aria-labelledby="heading-1">
+								<div class="card-block sin-space">
+									<div class="card">
+										<div class="card-header blue first">
+											<h4>Aplicaciones</h4>
+										</div>
+										<div class="card-block about-me sin-space">
+											<div class="table-responsive">
+												<table class="table">
+													<tbody>
+														<tr>
+															<td class="sbsp">
+																<input type="radio" name="radSize" id="vincular" value="small" onClick="js_aplicacion();">&nbsp;          
+								        						<label for="sizeSmall">Vincular</label>	
+															</td>
+															<td class="sbsp" align="center">
+																<label>Aplicación</label><br>
+																<select class="form-control col-sm-7" id="aplicacion" name="cmb_apli" disabled>
+																	<option>Seleccione aplicación</option>
+																	<option>1</option>
+																	<option>2</option>
+																</select>
+															</td>
+															<td class="sbsp" align="center">
+																<label>Perfil</label><br>
+																<select class="form-control col-sm-7" id="perfil" name="cmb_perfil" disabled>
+																	<option>Seleccione perfil</option>
+																	<option>1</option>
+																	<option>2</option>
+																</select>
+															</td>
+															<td class="sbsp" align="right">
+																<input class="btn btn-success" type="button" name="BTN_APLICACION" id="BTN_APLICACION" value="Aceptar" disabled>
+															</td>
+														</tr>
+														<tr>
+															<td class="sbsp">
+																<input type="radio" name="radSize" id="desvincular" value="small" onClick="js_aplicacion();">&nbsp;          
+								        						<label for="sizeSmall">Desvincular</label>	
+															</td>
+															<td class="sin-borde" align="center">Aplicación</td>
+															<td class="sin-borde" align="center">Perfil</td>
+															<td class="sin-borde" align="center">Aplicación Titular</td>
+														</tr>
+													</tbody>													
+												</table>												
+											</div>
+										</div>										
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- termina segundo acordeon -->
+						
+						<!-- inicia tercer acordeon -->
+						<div class="card">
+							<div class="card-header" role="tab" id="heading-2">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+					            <span class="icon icon-162"></span>Asignar Dispositivos - Modificar Niveles
+					        	</a>
+							</div>
+							<div id="collapse-2" class="collapse" role="tabpanel" aria-labelledby="heading-2">
+								<div class="card-block sin-space">						
+									<div id="accordionUno" class="card-block accordion" role="tablist" aria-multiselectable="true">					
+										<!-- inicia submenu uno -->
+										<div class="card">
+											<div class="card-header" role="tab" id="heading-3">
+												<a data-toggle="collapse" data-parent="#accordionUno" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+									            <span class="icon icon-5 submenu"></span>Asignar Dispositivos - Captura el número de serie de los dispositivos de Acceso Seguro Digital Adicionales
+									        	</a>
+											</div>
+											<div id="collapse-3" class="collapse" role="tabpanel" aria-labelledby="heading-3">
+												<div class="card-block sin-space">
+													<div class="card">
+														<div class="card-block about-me sin-space">
+															<div class="table-responsive">
+																<table class="table">
+																	<tbody>
+																		<tr align="center">
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde" rowspan="2" align="right">
+																				<label>Modelo de dispositivo</label>
+																			</td>
+																			<td class="sin-borde" rowspan="2">
+																				<select id="LST_DISP" class="form-control col-sm-10">
+																					<option value="-1">Seleccione tipo</option>
+																					<option>1</option>
+																					<option>2</option>
+																					<option>3</option>
+																				</select>
+																			</td>
+																		</tr>
+																		<tr align="center">
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																		</tr>
+																		<tr align="center">
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde" align="right">
+																				<label>CR</label>
+																			</td>
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																		</tr>
+																		<tr align="center">
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde" colspan="2" rowspan="2" align="right">
+																				<input class="btn btn-success" type="button" name="BTN_DISPOSITIVOS" id="BTN_DISPOSITIVOS" value="Aceptar" disabled>
+																			</td>
+																		</tr>
+																		<tr align="center">
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																			<td class="sin-borde">
+																				<input class="form-control form-control-sm col-sm-10" type="" name="">
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>		
+															</div>
+														</div>							
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- termina submenu uno -->
+
+										<!-- inicia submenu dos -->
+										<div class="card">
+											<div class="card-header" role="tab" id="heading-4">
+												<a data-toggle="collapse" data-parent="#accordionUno" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+									            <span class="icon icon-176 submenu"></span>Modificar Niveles - Capturar Niveles
+									        	</a>
+											</div>
+											<div id="collapse-4" class="collapse" role="tabpanel" aria-labelledby="heading-4">
+												<div class="card-block sin-space">
+													<div class="card">
+														<div class="card-block about-me">
+															<div class="table-responsive">
+																<table class="table">
+																	<tbody>
+																		<tr>
+																			<td class="sbsp">Nivel</td>
+																			<td class="sbsp">Clave</td>
+																			<td class="sbsp">Descripción</td>
+																		</tr>
+																		<tr>
+																			<td class="sbsp" colspan="3" align="right">
+																				<input class="btn btn-success" type="button" name="BTN_NIVELES" id="BTN_NIVELES" value="Actualizar">
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>							
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- termina submenu dos -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- termina tercer acordeon -->
+
+
+						<!-- inicia cuarto acordeon -->
+						<div class="card">
+							<div class="card-header" role="tab" id="heading-5">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+					            <span class="icon icon-65"></span>Estructura
+					        	</a>
+							</div>
+							<div id="collapse-5" class="collapse" role="tabpanel" aria-labelledby="heading-5">
+								<div class="card-block sin-space">
+									<div class="card">
+										<div class="card-block about-me sin-space">
+											<div class="table-responsive">
+												<table class="table">
+													<tbody>
+														<tr>
+															<td class="sbsp" align="right">
+																<label>Selección de nivel</label>
+															</td>
+															<td class="sbsp" align="center">
+																<select class="form-control col-sm-6">
+																	<option>Seleccione nivel</option>
+																</select>
+															</td>
+															<td class="sbsp">
+																<input type="radio" name="rb_cli" id="alta" value="true" onClick="js_structure();">
+													        	<label for="sizeSmall">Alta</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+													        	<input type="radio" name="rb_cli" id="modificar" value="false" onClick="js_structure();">
+																<label for="sizeMed">Modificar</label>&nbsp;
+															</td>
+															<td class="sbsp" align="right">
+																<input class="btn btn-success" type="button" name="BTN_ESTRUCTURA" id="BTN_ESTRUCTURA" value="Aceptar" disabled>	
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>										
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- termina cuarto acordeon -->
+
+
+
+					</div>
+				</div>
+
+
+
+
+			<script src="js/jquery-3.3.1.js"></script>
+			<script src="js/tether.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/prueba.js"></script>
+			<script src="js/modal.js"></script>
+			
+
+				
+			</form>			
+		</div>
+	</customform>
+</body>
+</html>

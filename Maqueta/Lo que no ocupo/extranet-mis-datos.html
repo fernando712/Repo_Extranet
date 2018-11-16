@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, user-scalable=no" />
+	<title>Mis datos | Modificación - Consulta</title>
+	<link rel="stylesheet" type="text/css" href="css/bundle.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<!-- <div class="page-layout-1column mis-datos"> -->
+
+
+			<div class="container columns">
+				<div class="column sidebar">
+				</div>
+				<div class="column main">
+					<div class="container">
+						<div class="card">
+							
+							<div id="accordion" class="card-block accordion" role="tablist" aria-multiselectable="true">
+								<div class="card">
+									<div class="card-header" role="tab" id="heading-0">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse-0" aria-expanded="false" aria-controls="collapse-0">
+					            <span class="icon icon-162"></span> Mi biografía
+					          </a>
+									</div>
+									<div id="collapse-0" class="collapse" role="tabpanel" aria-labelledby="heading-0">
+										<div class="card-block">
+											<form action="#dd" class="validate-form" method="post" id="bio-form">
+												<div class="card">
+													<div class="card-header blue first">
+														<h4>Acerca de mí</h4>
+													</div>
+													<div class="card-block about-me">
+														<div class="form-group">
+															<textarea name="name" rows="4" class="form-control col-12" id="tx-biog" maxlength="350" required>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis consequatur corrupti dolor inventore illo, odio alias maiores omnis saepe eaque reprehenderit minus officiis dignissimos. Quo ipsa corporis ducimus eos consectetur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae illo laudantium quibusdam animi, quod, provident dolor</textarea>
+														</div>
+													</div>
+												</div>
+												<div class="card mt-3">
+													<div class="card-header blue first">
+														<h4>Intereses</h4>
+													</div>
+													<div class="card-block">
+														<div class="row interests">
+																<div class="col-md-6">
+																	<p>
+																		<div class="form-check col-12 col-md-6">
+																			<input name="201712" type="checkbox" data-checkbox-filter>
+																			<label for="201712">Deportes</label>
+																		</div>
+																	</p>
+																	<p>
+																		<div class="form-check col-12 col-md-6">
+																			<input name="201712" type="checkbox" data-checkbox-filter>
+																			<label for="201712">Naturaleza</label>
+																		</div>
+																	</p>
+																	<p>
+																		<div class="form-check col-12 col-md-6">
+																			<input name="201712" type="checkbox" data-checkbox-filter>
+																			<label for="201712">Arte y Cultura</label>
+																		</div>
+																	</p>
+																	<p>
+																		<div class="form-check col-12 col-md-6">
+																			<input name="201712" type="checkbox" data-checkbox-filter>
+																			<label for="201712">Libros</label>
+																		</div>
+																	</p>
+																	<p>
+																		<div class="form-check col-12 col-md-6">
+																			<input name="201712" type="checkbox" data-checkbox-filter>
+																			<label for="201712">Viajes</label>
+																		</div>
+																	</p>
+																</div>
+																<div class="col-md-6">
+																	<p>
+																		<div class="form-check col-12 col-md-6">
+																			<input name="201712" type="checkbox" data-checkbox-filter>
+																			<label for="201712">Música</label>
+																		</div>
+																	</p>
+																	<p>
+																		<div class="form-check col-12 col-md-6">
+																			<input name="201712" type="checkbox" data-checkbox-filter>
+																			<label for="201712">Ciencia y tecnología</label>
+																		</div>
+																	</p>
+																	<p>
+																		<div class="form-check col-12 col-md-6">
+																			<input name="201712" type="checkbox" data-checkbox-filter>
+																			<label for="201712">Cocina</label>
+																		</div>
+																	</p>
+																	<p>
+																		<div class="form-check col-12 col-md-6">
+																			<input name="201712" type="checkbox" data-checkbox-filter>
+																			<label for="201712">Animales</label>
+																		</div>
+																	</p>
+																	<p>
+																		<div class="form-check col-12 col-md-6">
+																			<input name="201712" type="checkbox" data-checkbox-filter>
+																			<label for="201712">Cine</label>
+																		</div>
+																	</p>
+																</div>
+														</div>
+													</div>
+												</div>
+												<p class="text-center">
+													<input class="btn btn-success mt-3" type="submit" id="btn-sbio" value="Guardar">
+												</p>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" role="tab" id="heading-1">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+					            <span class="icon icon-161"></span> Datos personales
+					          </a>
+									</div>
+									<div id="collapse-1" class="collapse" role="tabpanel" aria-labelledby="heading-1">
+										<div class="card-block">
+											<form action="#" class="form-inline-center validate-form" method="post">
+												<dl class="data-table">
+													<dt><label>Nombres(s)</label></dt>
+													<dd><label>Berenice</label></dd>
+													<dt><label>Apellido paterno</label></dt>
+													<dd><label>Fuentes</label></dd>
+													<dt>
+									          <label>Apellido materno</label>
+									          <small>Opcional para becarios nacidos en EUA y que no cuenten con apellido materno</small>
+									        </dt>
+													<dd>Arroyo</dd>
+												</dl>
+												<dl class="data-table">
+													<dt><label>Región</label></dt>
+													<dd>
+														<select class="form-control" name="region">
+									            <option value="1">Región 1</option>
+									          </select>
+													</dd>
+													<dt><label>Estado de origen</label></dt>
+													<dd>
+														<select class="form-control" name="estado">
+									            <option value="1">México</option>
+									          </select>
+													</dd>
+													<dt><label>Municipio de origen</label></dt>
+													<dd>
+														<select class="form-control" name="municipio">
+									            <option value="1">Ixtlahuala</option>
+									          </select>
+													</dd>
+													<dt><label>CURP</label></dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" name="curp" placeholder="Ingresa CURP" required type="text">
+															<a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="¿No sabes cuál es tu CURP?">
+									              <i class="icon icon-200"></i>
+									            </a>
+														</div>
+													</dd>
+												</dl>
+												<dl class="data-table">
+													<dt><label>Fecha de nacimiento</label></dt>
+													<dd>
+														<div class="form-group">
+															<div class='input-group date'>
+																<input type='text' class="form-control" />
+																<span class="input-group-addon">
+                  								<span class="icon icon-167"></span>
+																</span>
+															</div>
+														</div>
+													</dd>
+													<dt><label>Edad</label></dt>
+													<dd><label>18 años</label></dd>
+													<dt><label>Sexo</label></dt>
+													<dd>
+														<select class="form-control" name="relation" required>
+									            <option value="0">Selecciona</option>
+									            <option value="1">Mujer</option>
+									            <option value="2">Hombre</option>
+									          </select>
+													</dd>
+												</dl>
+												<dl class="data-table">
+													<dt><label>CR Asignado</label></dt>
+													<dd>
+														<select class="form-control" name="cr-asignado">
+									            <option value="0">Selecciona</option>
+									          </select>
+													</dd>
+													<dt><label>Número de cuenta</label></dt>
+													<dd><label>1234567890</label></dd>
+												</dl>
+												<div class="form-footer">
+													<input class="btn btn-success" type="submit" value="Guardar cambios">
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" role="tab" id="heading-2">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+					            <span class="icon icon-49"></span> Beca
+					          </a>
+									</div>
+									<div id="collapse-2" class="collapse" role="tabpanel" aria-labelledby="heading-2">
+										<div class="card-block">
+											<div class="card">
+												<div class="card-header blue first">
+													<h4>Estatus general</h4>
+												</div>
+												<div class="card-block">
+													<dl class="data-table">
+														<dt><label>Estatus de dispersión</label></dt>
+														<dd><label class="status-success">Beca activa</label></dd>
+														<dt><label>Programa de becas</label></dt>
+														<dd><label>Adelante con tu universidad</label></dd>
+														<dt><label>Grado escolar</label></dt>
+														<dd><label>9 Semestre</label></dd>
+														<dt><label>Convenio</label></dt>
+														<dd><label>Texto convenio</label></dd>
+														<dt><label>Alianza</label></dt>
+														<dd><label>Texto alianza</label></dd>
+														<dt><label>Estado de origen</label></dt>
+														<dd><label>México</label></dd>
+														<dt><label>Municipio de origen</label></dt>
+														<dd><label>Ixtlahuaca</label></dd>
+														<dt><label>Región</label></dt>
+														<dd><label>Norte</label></dd>
+													</dl>
+												</div>
+											</div>
+											<div class="card mt-3">
+												<div class="card-header blue first">
+													<h4>Confirmaciones de depósitos pendientes</h4>
+												</div>
+												<div class="card-block card-confirm-month">
+													<form class="sub-container" action="extranet-mis-datos-confirmacion-deposito.html" method="get">
+														<div class="card blue">
+															<div class="row">
+																<div class="form-check col-12 col-md-3">
+																	<input name="201712" type="checkbox" data-checkbox-filter>
+																	<label for="201712">Junio 2017</label>
+																</div>
+																<div class="form-group col-12 col-md-7">
+																	<select class="form-control" name="status">
+									                  <option value="1">Si la recibí</option>
+									                  <option value="2">No la recibí</option>
+									                  <option value="3">Incompleta</option>
+									                </select>
+																</div>
+															</div>
+														</div>
+														<div class="card blue mt-3">
+															<div class="row">
+																<div class="form-check col-12 col-md-3">
+																	<input name="201706" type="checkbox" data-checkbox-filter>
+																	<label for="201706">Julio 2017</label>
+																</div>
+																<div class="form-group col-12 col-md-7">
+																	<select class="form-control" name="status">
+									                  <option value="1">Si la recibí</option>
+									                  <option value="2">No la recibí</option>
+									                  <option value="3">Incompleta</option>
+									                </select>
+																</div>
+															</div>
+														</div>
+														<div class="card blue mt-3">
+															<div class="row">
+																<div class="form-check col-12 col-md-3">
+																	<input name="201712" type="checkbox" data-checkbox-filter>
+																	<label for="201712">Agosto 2017</label>
+																</div>
+																<div class="form-group col-12 col-md-7">
+																	<select class="form-control" name="status">
+									                  <option value="0">Selecciona</option>
+									                  <option value="1">Si la recibí</option>
+									                  <option value="2">No la recibí</option>
+									                  <option value="3">Incompleta</option>
+									                </select>
+																</div>
+															</div>
+														</div>
+														<div class="card-footer">
+															<input class="btn btn-success btn-block mt-3 col-md-4" type="submit" value="Enviar confirmación" />
+														</div>
+													</form>
+												</div>
+											</div>
+											<div class="card mt-3">
+												<div id="accordion-deposit" class="card-block accordion" role="tablist" aria-multiselectable="true">
+													<div class="card-header blue" id="detail-deposit" role="tab">
+														<a class="blue-dark" data-toggle="collapse" data-parent="#accordion-deposit" href="#collapse-deposit" aria-expanded="true" aria-controls="collapse-deposit">
+									            <span>Detalle de depósitos</span>
+									          </a>
+													</div>
+													<div id="collapse-deposit" class="collapse show" role="tabpanel" aria-labelledby="detail-deposit">
+														<table class="table table-bordered wrapper fix-width table-responsive mb-0">
+															<thead>
+																<tr>
+																	<th>Mes</th>
+																	<th>Depósito</th>
+																	<th>Estatus de la confirmación</th>
+																	<th>Respuesta Fundación Bancomer</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td class="text-center">Enero 2017</td>
+																	<td class="text-center"><span class="warning">Depósito incompleto</span></td>
+																	<td class="text-center"><span class="warning">En proceso</span></td>
+																	<td class="text-center">
+																		<span class="warning">En proceso</span>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="text-center">Febrero 2017</td>
+																	<td class="text-center"><span class="warning">Depósito incompleto</span></td>
+																	<td class="text-center"><span class="success">Resuelto</span></td>
+																	<td class="">
+																		<span>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia?</span>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="text-center">Marzo 2017</td>
+																	<td class="text-center"><span class="error">Sin depóstio</span></td>
+																	<td class="text-center"><span class="success">Resuelto</span></td>
+																	<td class="">
+																		<span>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia?</span>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="text-center">Abril 2017</td>
+																	<td class="text-center"><span class="success">Depósito completo</span></td>
+																	<td class="text-center"><span class=""></span></td>
+																	<td class="">
+																		<span></span>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="text-center">Mayo 2017</td>
+																	<td class="text-center"><span class="success">Depósito completo</span></td>
+																	<td class="text-center"><span class=""></span></td>
+																	<td class="">
+																		<span></span>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" role="tab" id="heading-3">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+					            <span class="icon icon-92"></span> Datos Escolares
+					          </a>
+									</div>
+									<div id="collapse-3" class="collapse" role="tabpanel" aria-labelledby="heading-3">
+										<div class="card-block">
+											<div class="card">
+												<div class="card-header blue first">
+													<h4>Universidad</h4>
+												</div>
+												<div class="card-block">
+													<dl class="data-table">
+														<dt><label>Nombre</label></dt>
+														<dd>
+															<label>UNAM Facultad de Medicina</label>
+															<small><a href="#">Enlace módulo de universidad</a></small>
+														</dd>
+														<dt><label>Domicilio</label></dt>
+														<dd><label>Avenida Universidad 3000, Copilco El bajo, 04510 Coyoacan, CDMX</label></dd>
+														<dt><label>Tipo de escuela</label></dt>
+														<dd><label>Urbana</label></dd>
+														<dt><label>Siglas</label></dt>
+														<dd><label>FMD</label></dd>
+														<dt><label>Control</label></dt>
+														<dd><label>Texto</label></dd>
+														<dt><label>CCT</label></dt>
+														<dd><label>Texto</label></dd>
+														<dt><label>Estado</label></dt>
+														<dd><label>México</label></dd>
+														<dt><label>Municipio</label></dt>
+														<dd><label>Ixtlahuaca</label></dd>
+													</dl>
+												</div>
+											</div>
+											<div class="card mt-3">
+												<div class="card-header blue first">
+													<h4>Carrera</h4>
+												</div>
+												<div class="card-block">
+													<dl class="data-table">
+														<dt><label>Tipo de carrera</label></dt>
+														<dd><label>Licenciatura</label></dd>
+														<dt><label>Nombre de carrera</label></dt>
+														<dd><label>Medicina general</label></dd>
+														<dt><label>Área</label></dt>
+														<dd><label>Salud</label></dd>
+														<dt><label>Turno</label></dt>
+														<dd><label>Matutino</label></dd>
+														<dt><label>Duración</label></dt>
+														<dd><label>5 años</label></dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" role="tab" id="heading-4">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+					            <span class="icon icon-142"></span> Domicilio
+					          </a>
+									</div>
+									<div id="collapse-4" class="collapse" role="tabpanel" aria-labelledby="heading-4">
+										<div class="card-block">
+											<form action="#" class="form-inline-center validate-form" method="post">
+												<dl class="data-table">
+													<dt><label>Calle</label></dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" maxlength="50" placeholder="Ingresa calle" required type="text" />
+														</div>
+													</dd>
+													<dt><label>Número exterior</label></dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" maxlength="10" placeholder="Ingresa número exterior" required type="text" />
+														</div>
+													</dd>
+													<dt><label>Número interior</label></dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" maxlength="10" placeholder="Ingresa número interior" type="text" />
+														</div>
+													</dd>
+													<dt><label>Código postal</label></dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" maxlength="5" placeholder="Ingresa código postal" required type="text" />
+														</div>
+													</dd>
+													<dt><label>Estado</label></dt>
+													<dd>
+														<select class="form-control" name="estado" required>
+									            <option value="0">Selecciona</option>
+									            <option value="1">México</option>
+									          </select>
+													</dd>
+													<dt><label>Municipio</label></dt>
+													<dd>
+														<select class="form-control" name="municipio" required>
+									            <option value="0">Selecciona</option>
+									            <option value="1">Naucalpan</option>
+									          </select>
+													</dd>
+													<dt><label>Localidad</label></dt>
+													<dd>
+														<select class="form-control" name="localidad" required>
+									            <option value="0">Selecciona</option>
+									            <option value="1">Las torres</option>
+									          </select>
+													</dd>
+													<dt><label>Colonia</label></dt>
+													<dd>
+														<select class="form-control" name="colonia" required>
+									            <option value="0">Selecciona</option>
+									            <option value="1">Las torres</option>
+									          </select>
+													</dd>
+												</dl>
+												<dl class="data-table">
+													<dt><label>Entre la calle</label></dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" maxlength="50" placeholder="Ingresa calle" required type="text" />
+														</div>
+													</dd>
+													<dt><label>&nbsp;</label></dt>
+													<dd>
+														<select class="form-control" name="vialidad1" required>
+									            <option value="0">Tipo de vialidad</option>
+									            <option value="1">Ninguno</option>
+									            <option value="2">Ampliación</option>
+									            <option value="3">Andador</option>
+									            <option value="4">Avenida</option>
+									            <option value="5">Boulevard</option>
+									          </select>
+													</dd>
+												</dl>
+												<dl class="data-table">
+													<dt><label>Y la calle</label></dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" maxlength="50" placeholder="Ingresa calle" required type="text" />
+														</div>
+													</dd>
+													<dt><label>&nbsp;</label></dt>
+													<dd>
+														<select class="form-control" name="vialidad2" required>
+									            <option value="0">Tipo de vialidad</option>
+									            <option value="1">Ninguno</option>
+									            <option value="2">Ampliación</option>
+									            <option value="3">Andador</option>
+									            <option value="4">Avenida</option>
+									            <option value="5">Boulevard</option>
+									          </select>
+													</dd>
+												</dl>
+												<dl class="data-table">
+													<dt><label>Calle de atrás</label></dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" maxlength="50" placeholder="Ingresa calle" required type="text" />
+														</div>
+													</dd>
+													<dt><label>&nbsp;</label></dt>
+													<dd>
+														<select class="form-control" name="vialidad3" required>
+									            <option value="0">Tipo de vialidad</option>
+									            <option value="1">Ninguno</option>
+									            <option value="2">Ampliación</option>
+									            <option value="3">Andador</option>
+									            <option value="4">Avenida</option>
+									            <option value="5">Boulevard</option>
+									          </select>
+													</dd>
+												</dl>
+												<dl class="data-table">
+													<dt><label>Referencias particulares</label></dt>
+													<dd>
+														<div class="form-group">
+															<textarea class="form-control" placeholder="Ingresa referencias" required></textarea>
+															<a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Describe como es la entrada de tu casa o si existe algún comercio cerca de ella.">
+									              <i class="icon icon-200"></i>
+									            </a>
+														</div>
+													</dd>
+												</dl>
+												<div class="form-footer">
+													<input class="btn btn-success" type="submit" value="Guardar">
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" role="tab" id="heading-5">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+					            <span class="icon icon-66"></span> Datos de contacto
+					          </a>
+									</div>
+									<div id="collapse-5" class="collapse" role="tabpanel" aria-labelledby="heading-5">
+										<div class="card-block">
+											<form action="#" class="form-inline-center validate-form" method="post">
+												<dl class="data-table">
+													<dt><label>Teléfono de casa</label></dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" maxlength="10" placeholder="Ingresa teléfono" required type="tel">
+															<a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hasta 10 dígitos">
+									              <i class="icon icon-200"></i>
+									            </a>
+														</div>
+													</dd>
+													<dt><label>Teléfono celular</label></dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" maxlength="10" placeholder="Ingresa teléfono" required type="tel">
+															<a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hasta 10 dígitos">
+									              <i class="icon icon-200"></i>
+									            </a>
+														</div>
+													</dd>
+													<dt><label>Teléfono para recados</label></dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" maxlength="10" placeholder="Ingresa teléfono" required type="tel">
+															<a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hasta 10 dígitos">
+									              <i class="icon icon-200"></i>
+									            </a>
+														</div>
+													</dd>
+												</dl>
+												<dl class="data-table">
+													<dt><label>Correo electrónico para inicio de sesión</label></dt>
+													<dd><label>berenice.fuentes@mail.com</label></dd>
+													<dt><label>Correo electrónico de contacto principal</label></dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" placeholder="Ingresa correo electrónico" required type="email">
+														</div>
+													</dd>
+													<dt>
+									          <label>Correo electrónico adicional</label>
+									          <small>Opcional</small>
+									        </dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" placeholder="Ingresa correo electrónico" type="email">
+														</div>
+													</dd>
+													<dt>
+									          <label>Correo electrónico adicional</label>
+									          <small>Opcional</small>
+									        </dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" placeholder="Ingresa correo electrónico" type="email">
+														</div>
+													</dd>
+												</dl>
+												<div class="form-footer">
+													<input class="btn btn-success" type="submit" value="Guardar">
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" role="tab" id="heading-6">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
+					            <span class="icon icon-128"></span> Datos del tutor
+					          </a>
+									</div>
+									<div id="collapse-6" class="collapse" role="tabpanel" aria-labelledby="heading-6">
+										<div class="card-block">
+											<form action="#" class="form-inline-center validate-form" method="post">
+												<dl class="data-table">
+													<dt><label>Nombre(s)</label></dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" maxlength="50" placeholder="Ingresa nombres" required type="text" />
+														</div>
+													</dd>
+													<dt><label>Apellido paterno</label></dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" maxlenth="50" placeholder="Ingresa apellido" required type="text" />
+														</div>
+													</dd>
+													<dt>
+            <label>Apellido materno</label>
+            <small>Opcional para becarios nacidos en EUA y que no cuenten con apellido materno</small>
+          </dt>
+													<dd>
+														<div class="form-group">
+															<input class="form-control" maxlength="50" placeholder="Ingresa apellido" type="text" />
+															<a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Opcional para becarios nacidos en EUA y que no cuenten con apellido materno">
+                <i class="icon icon-200"></i>
+              </a>
+														</div>
+													</dd>
+													<dt><label>Parentesco</label></dt>
+													<dd>
+														<select class="form-control other-relation" name="relation">
+              <option>Selecciona</option>
+              <option value="madre">Madre</option>
+              <option value="padre">Padre</option>
+              <option value="abuelo">Abuelo(a)</option>
+              <option value="tio">Tío(a)</option>
+              <option value="hermano">Hermano(a)</option>
+              <option class="other-relation-op" value="otro">Otro</option>
+            </select>
+													</dd>
+													<dt class="other-relation-target" style="display:none"><label>Especificar parentesco</label></dt>
+													<dd class="other-relation-target" style="display:none"><input class="form-control" name="relation_other" placeholder="Ingresa parentesco" type="text"></dd>
+												</dl>
+												<div class="form-footer">
+													<input class="btn btn-success" type="submit" value="Guardar cambios">
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" role="tab" id="heading-7">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
+            <span class="icon icon-145"></span> Configuración de cuenta
+          </a>
+									</div>
+									<div id="collapse-7" class="collapse" role="tabpanel" aria-labelledby="heading-7">
+										<div class="card-block">
+											<dl class="data-table">
+												<dt><label>Usuario</label></dt>
+												<dd><label>bere.arroyo@mail.com</label></dd>
+
+
+	<span class="icon icon-4">
+	<span class="icon icon-5">
+	<span class="icon icon-6">
+	<span class="icon icon-7">
+	<span class="icon icon-8">
+	<span class="icon icon-9">
+	<span class="icon icon-10">
+	<span class="icon icon-11">
+
+											</dl>
+											<div class="text-center">
+												<a class="btn btn-primary" href="extranet-new-password.html">Cambiar contraseña</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+<!-- 	</div> -->
+
+
+
+<!-- 	<script src="scripts/lib/jquery-2.1.1.min.js"></script> -->
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<!-- 	<script src="scripts/lib/moment-with-locales.min.js"></script> -->
+	<script src="scripts/lib/tether.min.js"></script>
+	<script src="scripts/lib/bootstrap.min.js"></script>
+<!-- 	<script src="scripts/lib/bootstrap-datetimepicker.min.js"></script> -->
+<!-- 	<script src="scripts/lib/dropzone.js"></script> -->
+<!-- 	<script src="scripts/lib/oliva.js"></script> -->
+	<!-- <script src="scripts/lib/vostro.js"></script> -->
+<!-- 	<script src="scripts/lib/main.js"></script> -->
+<!-- 	<script src="js/m-datos.js"> -->
+
+	</script>
+</body>
+
+</html>
+
+
+
+
+<!-- inicia submenu dos -->
+										<div class="card">
+											<div class="card-header" role="tab" id="heading-4">
+												<a class="titulo-submenu" data-toggle="collapse" data-parent="#accordionUno" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+									            <span class="icon icon-162 submenu"></span>Modificar Niveles - <label class="titulo-submenu-uno">Capturar Niveles</label>
+									        	</a>
+											</div>
+											<div id="collapse-4" class="collapse" role="tabpanel" aria-labelledby="heading-4">
+												<div class="card-block sin-space">
+													<div class="card">
+														<div class="card-block about-me">
+															<div class="form-group">
+																
+															</div>
+														</div>							
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- termina submenu dos -->

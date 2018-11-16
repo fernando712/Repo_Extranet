@@ -1,0 +1,17 @@
+Datos del servidor
+
+150.250.250.227
+mb30510
+1357gora
+
+||||||||||||||||||||||
+
+Ruta del JSP
+
+/de80mxexhau/aumx/online/es/web/jsp/aumx_es_web_jsp
+
+||||||||||||||||||||||||||||||
+
+Ruta de css y js
+
+/de80mxexhau/aumx/online/es/web/pub

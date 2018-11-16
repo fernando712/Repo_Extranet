@@ -1,0 +1,5 @@
+&nbsp;<label>Identificador de Administrador</label><br>
+<inputfieldtext>
+	<span id="ADMINEN_ER"></span>
+	&nbsp;<input class="form-control form-control-sm col-sm-10"  type="text" name="ADMINEN" value='<%=utils.getValorContexto("ADMINEM").trim()%>' size="30" readonly>
+</inputfieldtext>

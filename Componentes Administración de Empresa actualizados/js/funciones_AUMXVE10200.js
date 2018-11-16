@@ -1,0 +1,144 @@
+
+// Componente AUMXVE10200
+$(document).ready(function(){
+	editDataCompany();
+});
+
+	function SelFunc(){
+		var radios = document.getElementsByName("RDB_EMPRESA").length;
+		var cadena = "";
+		if(radios <= 0){
+			return false;	
+		}
+		if(radios > 1){
+			for(i = 0; i < radios; i++){
+				if(document.AUMXVE10200.RDB_EMPRESA[i].checked==true){
+					var cadena = document.AUMXVE10200.RDB_EMPRESA[i].value;
+					var arreglo = cadena.split("|");
+					break;
+				}
+			}
+		}else{
+			var cadena = document.AUMXVE10200.RDB_EMPRESA.value;
+			var arreglo = cadena.split("|");
+		}
+		
+	}
+	
+	function jsAsignar(){
+		if( SelFunc() ){
+			document.forms[0].evento.value = '0X250100F';//asignaci�n
+			EnviarFormulario();
+		}
+	}
+
+	function jsDesasignar(){
+		if( SelFunc() ){
+			document.forms[0].evento.value = '0X2501010';//desasignaci�n
+			EnviarFormulario();
+		}
+	}
+
+	function jsAsignaTokens(){
+		if( SelFunc() ){
+			document.forms[0].evento.value = '0X2501019';//asignaTokens
+			EnviarFormulario();
+		}	
+	}
+
+	function jsBajaTokens(){
+		if( SelFunc() ){
+			document.forms[0].evento.value = '0X250101A';//asignaTokens
+			EnviarFormulario();
+		}	
+	}
+	
+	function jsModificar(){
+		if( SelFunc() ){
+			document.forms[0].evento.value = '0X250101D';//modificar
+			EnviarFormulario();
+		}
+	}
+	function editDataCompany(){
+		$("#principalTable tbody").on("click","tr td.modifyCompany", function () {
+			window.top.console.log($(this).attr("data-selected"));
+			$("td.modifyCompany").prop('onclick',null).off('click');
+			viewOptionsCompany($(this).attr("data-selected"));
+		});
+	}
+
+	function viewOptionsCompany(cadena){
+		var arreglo = cadena.split("|");
+		if(cadena==""){
+			alert("Estimado usuario favor de validar los siguientes campos: \n     Referencia - Seleccionar una referencia ");
+		}else{
+			document.AUMXVE10200.N_HDN_REFEREN.value = arreglo[0];
+			document.AUMXVE10200.N_HDN_REFDESC.value = arreglo[1];
+			document.AUMXVE10200.N_HDN_ESTADOE.value = arreglo[2];
+			document.AUMXVE10200.N_HDN_ADMINEM.value = arreglo[3];
+			document.AUMXVE10200.N_HDN_CONTACT.value = arreglo[4];
+			document.AUMXVE10200.N_HDN_APPTITU.value = arreglo[5];
+			document.AUMXVE10200.N_HDN_TITULAR.value = arreglo[6];
+			document.AUMXVE10200.N_HDN_EMAIL.value   = arreglo[7];
+			document.AUMXVE10200.N_HDN_INDADM.value  = arreglo[8];
+			document.AUMXVE10200.N_HDN_NIVELES.value = arreglo[9];
+			document.forms[0].evento.value = '0X2501033';//modificar
+			EnviarFormulario();
+		}
+	}
+
+	
+	function jsModificarPerfil(){
+		if( SelFunc() ){
+			document.forms[0].evento.value = '0X250101E';//modificarPerfil
+			EnviarFormulario();
+		}
+	}
+
+	function jsBaja(){
+		if( SelFunc() ){
+			document.forms[0].evento.value = '0X250100A';//baja
+			EnviarFormulario();
+		}
+	}
+	function jsNiveles(){
+		if( SelFunc() ){
+			document.forms[0].evento.value = '0X2501011';//niveles
+			EnviarFormulario();
+		}
+	}
+	
+	function jsAdmin(){
+		if( SelFunc() ){
+			document.forms[0].evento.value = '0X2501001';//administrador
+			EnviarFormulario();
+		}
+	}
+	
+	function jsCambioTitular(){
+		if( SelFunc() ){
+			document.forms[0].evento.value = '0X2501014';//cambioTitular
+			EnviarFormulario();
+		}
+	}
+	
+	function jsAltaEst(){
+		if( SelFunc() ){
+			document.forms[0].evento.value = '0X2501022';//Alta Estru
+			EnviarFormulario();
+		}
+	}
+	
+	function jsModEst(){
+		if( SelFunc() ){
+			document.forms[0].evento.value = '0X2501023'; //Mod Estruct
+			EnviarFormulario();
+		}
+	}
+	
+	function jsPaginar (indpag, cvepag){
+		$("#N_HDN_INDPAG").val(indpag);
+		$("#N_HDN_CVEPAG").val(cvepag);
+		$("#evento").val("0X2501030");
+	   	$("#AUMXVE10200").submit();
+	}

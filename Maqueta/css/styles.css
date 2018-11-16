@@ -1,0 +1,191 @@
+.blue-text{
+    color: #009EE5;
+}
+
+.titulo{
+  font-size: 1.5rem;
+}
+
+td.sin-borde{
+  border: 0;
+}
+
+td.pad{
+  padding: .1rem;
+}
+
+td.papp{
+  padding: .3rem;
+}
+
+.subtitulo{
+  font-size: .875rem;
+}
+
+.sin-space{
+  padding: .1rem;
+}
+
+.card-header.blue.first {
+    background: #094fa4;
+    padding: .1rem 1.25rem;
+}
+
+.card-header {
+  color: #094fa4;
+  font-size: 14px; 
+  font-weight: 400;
+}
+
+td.sbsp{
+  border: 0;
+  padding: 0;
+}
+
+th.sbsp{
+  border: 0;
+  padding: 0;
+}
+
+.submenu{
+  padding: 0 0 0 2rem;
+}
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .1rem .4rem;
+    font-size: .7rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #d8d8d8;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.enabled{
+  background-color: #F7F7F7 ;
+}
+
+.requerido{
+  background-color: #FFF2DD ;
+}
+
+.modal-body.message-system.success h2, .modal-body.message-system.success i {
+  color: #86c82d;
+}
+.modal-body.message-system.danger h2, .modal-body.message-system.info h2, .modal-body.message-system.success h2, .modal-body.message-system.warning h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.modal-body.message-system.success {
+  color: #666;
+}
+
+
+
+
+/*.titulo-submenu{
+  font-weight: bold;
+}
+
+.titulo-submenu-uno{
+  font-weight: 400;
+}
+
+.card-header label {
+    color: #094fa4;
+}
+*/
+
+
+/*.mentor-header{
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+.mentor-header .title.bct{
+    color: #094fa4;
+}
+.mentor-header .blt{
+    color: #009ee5;
+}
+.b-title{
+    color: #094fa4;
+    font-size: 17px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.schedule-table{
+  font-size: 15px;
+}
+.t-blue{
+  color: #009bda;
+}
+.w50p{
+  width: 50%;
+}
+.card-eval{
+  margin-top: 20px !important;
+  padding: 20px;
+}
+.e-stars{
+  letter-spacing: -4px;
+}
+.e-stars .e-star{
+  background-image: url('../images/star.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  height: 25px;
+  width: 30px;
+  cursor: pointer;
+}
+.e-stars .e-star.blu-star{
+  background-image: url('../images/star-b.png');
+}
+#card-noevaluar textarea{
+  width: 100%;
+}
+.schedule-area,
+.schedule-area .schedule-card{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.no-mentor{
+  color: #094fa4;
+}
+.no-mentor span.icon{
+  font-size: 30px;
+}
+@media only screen and (max-width: 500px) {
+    .minw-stars {
+        min-width: 100%;
+        text-align: center;
+    }
+    .minw-stars.text-right{
+      text-align: center !important;
+    }
+}
+
+/*IGNORAR DESDE AQUI [funciona solo para maqueta]*/
+/*.modal-body.message-system.success h2, .modal-body.message-system.success i {
+    color: #86c82d;
+}*/
+/*.modal-body.message-system.danger h2, .modal-body.message-system.info h2, .modal-body.message-system.success h2, .modal-body.message-system.warning h2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+*//*.modal-body.message-system.success {
+    color: #666;
+}
+*//* IGNORAR HASTA AQUÍ */
+
+
+/*MI BIOGRAFIA*/
+/*.about-me .form-group{
+  display: block !important;
+}*/

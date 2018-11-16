@@ -1,0 +1,424 @@
+/* Hoja de estilos correspondiente a la aplicación: AUMX (Portal Extranet) */ 
+
+
+body {
+	background-color:#ffffff;
+}
+
+@media print {
+    div,a {display:none}
+    .ver {display:block}
+    .nover {display:none}
+}
+
+.td_borde_tabs {font-family: Verdana; font-size: 10px; color: #000000; background-image:url(../imagenes/borde_tabs.gif); padding-bottom: 5px;}
+
+
+.tr_esp10 {
+	padding-bottom: 10px;
+}
+
+.tr_esp20 {
+	padding-bottom: 20px;
+}
+
+.tr_esp30 {
+	padding-bottom: 20px;
+}
+
+.tr_esp50 {
+	padding-bottom: 50px;
+}
+
+.combo_normal {FONT-FAMILY:Verdana, sans-serif; FONT-SIZE:11px; TEXT-ALIGN:left;  line-height: normal;}
+
+A.ligabp1 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #0053A1; line-height: 11px; font-style: normal; font-variant: normal; text-decoration: none; color: #0053A1}
+A:hover.ligabp1 {font-weight: bold; text-decoration: underline;}
+
+A.liga_bold {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #0053A1; line-height: 11px; font-variant: normal; text-decoration: none; font-weight: bold;}
+A:hover.liga_bold {text-decoration: underline;}
+
+A.ligabpgde1 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #0053A1; line-height: 11px; font-style: normal; font-variant: normal; text-decoration: none; color: #0053A1}
+A:hover.ligabpgde1 { color: #FFFFFF; text-decoration: underline;}
+
+
+.tabla1 {
+	border: 1px solid #000000;
+	border-collapse: collapse;
+}
+
+.tabla2 {
+	border: 1px solid #D4E0EE;
+	font-family: Verdana, Arial, sans-serif;
+	color: #555;
+}
+/*Estilo para el grid de botones consulta/modificación*/
+.button_grid {  
+	FONT-FAMILY: Arial regular;		
+	FONT-SIZE: 15px;
+	COLOR: white;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 130px;
+	border:#FFFFFF;	
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#009EE5', endColorstr='#006EC1');
+}
+/*Estilo para botones consulta/modificacion cuando estan sobre ellos BBVA*/
+.button_grid:hover {
+    FONT-FAMILY: Arial regular;		
+	FONT-SIZE: 15px;
+	COLOR: #094FA4;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 130px;
+	border:#FFFFFF;		
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#B5E5F9', endColorstr='#89D1F3');
+}
+/*Estilo para botones consulta/modificacion cuando estan presionados BBVA*/
+.button_grid:active {
+    FONT-FAMILY: Arial regular;		
+	FONT-SIZE: 15px;
+	COLOR: white;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 130px;
+	border:#FFFFFF;		
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#006EC1', endColorstr='#009EE5');
+}
+/*Estilo para los botones grandes consulta/modificación BBVA*/
+.button_grid1 {  
+	FONT-FAMILY: Arial regular;		
+	FONT-SIZE: 15px;
+	COLOR: white;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 170px;
+	border:#FFFFFF;	
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#009EE5', endColorstr='#006EC1');
+} 
+
+/*Estilo para botones grandes consulta/modificacion cuando estan sobre ellos BBVA*/
+.button_grid1:hover {
+    FONT-FAMILY: Arial regular;		
+	FONT-SIZE: 15px;
+	COLOR: #094FA4;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 170px;
+	border:#FFFFFF;		
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#B5E5F9', endColorstr='#89D1F3');
+}
+/*Estilo para botones grandes consulta/modificacion cuando estan presionados BBVA*/
+.button_grid1:active {
+    FONT-FAMILY: Arial regular;		
+	FONT-SIZE: 15px;
+	COLOR: white;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 170px;
+	border:#FFFFFF;		
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#006EC1', endColorstr='#009EE5');
+}
+/*Estilo para botones pequeños deshabilitados BBVA*/
+.button_little_Deshabilitado { 
+	FONT-FAMILY: Arial regular;		
+	FONT-SIZE: 15px;
+	COLOR: #808080;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 130px;
+	border:#FFFFFF;		
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#CCCCCC', endColorstr='#B2B2B2');
+					
+}
+/*Estilo para botones pequeños BBVA*/
+.button_little { 
+	FONT-FAMILY: Arial regular;		
+	FONT-SIZE: 15px;
+	COLOR: white;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 130px;
+	border:#FFFFFF;		
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#009EE5', endColorstr='#006EC1');
+					
+}
+/*Estilo para botones pequeños cuando estan sobre ellos BBVA*/
+.button_little:hover {
+    FONT-FAMILY: Arial regular;		
+	FONT-SIZE: 15px;
+	COLOR: #094FA4;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 130px;
+	border:#FFFFFF;		
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#B5E5F9', endColorstr='#89D1F3');
+}
+/*Estilo para botones pequeños cuando estan presionados BBVA*/
+.button_little:active {
+    FONT-FAMILY: Arial regular;		
+	FONT-SIZE: 15px;
+	COLOR: white;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 130px;
+	border:#FFFFFF;	
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006EC1', endColorstr='#009EE5');	
+}
+/*Estilo para botones pequeños deshabilitados BBVA*/
+.button_Big_Deshabilitado { 
+	FONT-FAMILY: Arial regular;		
+	FONT-SIZE: 15px;
+	COLOR: #808080;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 190px;
+	border:#FFFFFF;		
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#CCCCCC', endColorstr='#B2B2B2');
+					
+}
+/*Estilo para botones con palabras grandes BBVA*/
+.button_Big {  /**/
+	FONT-FAMILY: Arial regular;
+	FONT-SIZE: 15px;
+	COLOR: white;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 190px;
+	border:#FFFFFF;	
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#009EE5', endColorstr='#006EC1');
+}
+/*Estilo para botones con palabras grandes cuando estan sobre ellos BBVA*/
+.button_Big:hover {
+    FONT-FAMILY: Arial regular;		
+	FONT-SIZE: 15px;
+	COLOR: #094FA4;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 190px;
+	border:#FFFFFF;		
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#B5E5F9', endColorstr='#89D1F3');
+}
+/*Estilo para botones con palabras grandes cuando estan presionados BBVA*/
+.button_Big:active {
+    FONT-FAMILY: Arial regular;		
+	FONT-SIZE: 15px;
+	COLOR: white;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 190px;
+	border:#FFFFFF;		
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#006EC1', endColorstr='#009EE5');
+}
+/*Estilo para botones con palabras mas grandes*/
+/*Estilo para botones pequeños deshabilitados BBVA*/
+.button_Extra_Deshabilitado { 
+	FONT-FAMILY: Arial regular;		
+	FONT-SIZE: 15px;
+	COLOR: #808080;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 200px;
+	border:#FFFFFF;		
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#CCCCCC', endColorstr='#B2B2B2');
+					
+}
+/*Estilo para botones con palabras grandes BBVA*/
+.button_Extra {  /**/
+	FONT-FAMILY: Arial regular;
+	FONT-SIZE: 15px;
+	COLOR: white;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 200px;
+	border:#FFFFFF;	
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#009EE5', endColorstr='#006EC1');
+}
+/*Estilo para botones con palabras grandes cuando estan sobre ellos BBVA*/
+.button_Extra:hover {
+    FONT-FAMILY: Arial regular;		
+	FONT-SIZE: 15px;
+	COLOR: #094FA4;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 200px;
+	border:#FFFFFF;		
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#B5E5F9', endColorstr='#89D1F3');
+}
+/*Estilo para botones con palabras grandes cuando estan presionados BBVA*/
+.button_Extra:active {
+    FONT-FAMILY: Arial regular;		
+	FONT-SIZE: 15px;
+	COLOR: white;
+	LINE-HEIGHT: 25px; /*Altura*/
+	BACKGROUND-COLOR: #006EC1; 
+	CURSOR: HAND;
+	width: 200px;
+	border:#FFFFFF;		
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#006EC1', endColorstr='#009EE5');
+}
+
+.extra{
+BACKGROUND: url(../imagenes/final.png);
+background-repeat:no-repeat;
+background-position:center; 
+}
+
+
+/*Estilos para el contenido de las tablas BBVA*/
+.panel{
+	border: 2px solid;
+	border-color: #094FA4;
+	Padding: 10px;
+	background: #E6F0FF;
+	/*background: #BBCBE7;   
+	background: #B5E5F9;*/
+}
+
+/*Estilos para los campos de captura bloqueados BBVA*/
+.disabled {
+	FONT-FAMILY: Arial regular;
+	font-size: 15px;
+	border: 1px solid #B2B2B2;
+	background-color: #CCCCCC ;
+	color: #000000;
+
+}
+
+/*Estilos para los campos de captura generales BBVA*/
+.enabled{
+	FONT-FAMILY: Arial regular;
+	font-size: 15px;
+    border: 1px solid #B2B2B2;
+	background-color: #F7F7F7 ;
+	color:#000000;
+}
+
+/*Estilos para los campos de captura obligatorios BBVA*/
+.requerido{
+	FONT-FAMILY: Arial regular;
+	font-size: 15px;
+	border: 1px solid #B2B2B2;
+	background-color: #FFF2DD ;
+	color: #000000;
+
+}
+/*Estilo para titulos de tablas BBVA*/
+.tituloTabla{ 
+	FONT-FAMILY: Arial ;
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 20px; 
+	BACKGROUND-COLOR: #094FA4;
+	COLOR: #FFFFFF; 
+	TEXT-ALIGN: center;	
+}
+
+/*Estilos para Subtitulos BBVA*/
+.subtituloTabla{ 
+	FONT-FAMILY: Arial;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 15px; 	 
+	BACKGROUND-COLOR: #094FA4;
+	COLOR: #FFFFFF; 
+}
+.border-shadow{
+	border-style: solid; border-width: 1px; border-color: #ddd;
+}
+
+.title-company{
+	font-size: 1.375 rem;
+}
+
+.subtitle-company{
+	color: #094fa4;
+    background-color: #f2f2f2;
+}
+.subtitle-company>h3{
+	font-size: 1.125rem;
+}
+
+/*Estilos para el texto contenido en tablas BBVA*/
+.cellTablaN{
+	font-family: Arial regular;	
+	font-size: 15px;
+	text-align: left;
+	color: #094FA4;
+}
+
+.cellTabla{
+	FONT-FAMILY:Verdana,sans-serif;
+	font-size: 11px;
+}
+
+.scroll_area { height: 480px; width: 970px; overflow:auto; border:0; background-color: #FFFFFF;}
+
+/*.divPrincipal{
+	text-align:center;
+}*/
+
+.divPrincipal{
+	      position:absolute; 
+          left: 50%; 
+		  margin-left: -35%;
+		/*overflow: auto;
+          top: 50%; 
+          width: 300px; 
+          height: 200px; 
+          margin-top: -100px;          
+          border: 1px solid red; 
+	/*margin: 10px auto 15px auto;	*/
+}
+
+.tablasDinamicas{
+	border-width: 1px;
+	border-style:solid;
+	border-bottom-color:#B5E5F9; 
+	border-right-color:#009EE5;
+	border-top-color:#E0E8F6;
+}
+
+.tablasDinamicasFin{
+	border-width: 1px;
+	border-style:solid;
+	border-bottom-color:#B5E5F9; 
+	border-top-color:#E0E8F6;
+}
+
+.renglonPar{
+	background-color:#EDF7FC;
+}
+
+.renglonImpar{
+	background-color:#FFFFFF;
+}
+
+/*Estilos para los hipervinculos BBVA*/
+a:link.hiper{
+	color:#009EE5;
+}
+
+/*Estilos para los hipervinculos visitados BBVA*/
+a:visited.hiper{
+	color:#009EE5;
+	      /*F6891E*/
+}
+
+
+
